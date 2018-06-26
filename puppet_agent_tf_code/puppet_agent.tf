@@ -17,3 +17,6 @@ tags {
      }
 }
 
+resource "aws_eip" "ip" {
+  instance = "${aws_instance.puppetagent.id}"
+}
